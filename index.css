@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:ital,wght@1,100&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.aside{
+    width: 20%;
+    height: 100vh;
+    background-color: #1D2731;
+}
+.profileCard{
+    height: 30%;
+    background: url("./asset//image/media_127540366421d3d5bfcaf8202527ca7d37741fd5d.jpeg"); 
+    background-size: cover;  
+    position: relative;
+}
+.profileCardContentontainer{
+    width: 100%;
+    height: 100%;
+    background-color: #000000c9;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardContainer{
+    width: 70%;
+    height: 70%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.composss{
+    padding: 10px;
+    border: 2px solid #F0552E;
+    background-color: rgba(255, 255, 255, 0.137);
+    box-shadow: 2px 2px 10px #F0552E;
+}
+.navLinksContainer{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.navLink{
+    width: 100%;
+    padding: 15px 0px;
+    color: white;
+}
+.navLink:hover{
+    background-color: white;
+    color: black;
+}
+#notification{
+    display: flex;
+    justify-content: space-between;
+}
+.notiCount{
+    margin-right: 25px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F0552E;
+    border-radius: 50%;
+    position: relative;
+}
+.link{
+    margin-left: 10px;
+}
+.navLink:hover > .notiCount {
+    background-color: #F0552E;
+    color: white;
+}
+.count{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    font-size: smaller;
+}
+.section{
+    width: 35%;
+    height: 100vh;
+    border-right: 1px solid rgb(197 197 197 / 38%);
+}
+.navTabs{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider{
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #00000014;
+    width: 95%;
+}
+.navLinksContainder{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.tab{
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#activeTab{
+border-bottom: 2px solid #F0552E;
+}
+.peopleContentContainer{
+    width: 100%;
+    height: 90vh;
+   overflow-y: scroll;
+}
+.peopleInfo{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nameTag{
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.subTitle{
+    color: gray;
+}
+.peopleInfoWraper{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.peopleInfoWraper:hover{
+    clip-path: polygon(
+        0% 0%, 
+        97% 0, 
+        97% 40%, 
+        99% 50%, 
+        97% 65%, 
+        97% 100%, 
+        0 100%
+        ); 
+      background-color: #F0552E;
+}
+.userDetailPage{
+    width: 45%;
+    height: 100vh;
+}
+.profileImgContainer{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profileImg{
+    width: 40%;
+    height: 100%;
+}
+.profileDes{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.splitter{
+ width: 1px;
+ height: 70%;
+ background-color: #00000014;
+}
+.h2{
+    font-size: large;
+    font-weight: 600;
+}
+.mail{
+    margin-top: 5px;
+}
+.infoContainer{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.infoSubcontainer{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.attachmentContainer{
+    width: 100%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.attachmentSubContainer{
+    margin-left: 5%;
+    align-self: flex-start;
+}
+.infoFooter{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    width: 90%;
+    height: 70%;
+    border: 1px solid #00000014 ;
+}
+.footerContent{
+    margin: 4% 6% 0 6%; 
+    font-size: smaller;   
+}
+.details{
+    font-size: smaller;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-thumb {
+    background: #F0552E;
+}
+::-webkit-scrollbar-track {
+    border-radius: 2px;
+    box-shadow: inset 0 0 5px rgb(204, 197, 197);
+}
+.profilePic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 9%;
+}
+.profileLocation{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: small;
+}
+.actionBtnContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.actionBtn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #00000014;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+.action{
+    width: 20px;
+    height: 20px;
+}
